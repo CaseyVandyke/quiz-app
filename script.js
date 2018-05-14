@@ -32,22 +32,37 @@ $('.quiz-start').on('click', '.js-start', function (event) {
 //render quiz 
 function renderQuiz() {
     $('.quiz-questions').html(getQuestions);
-    $('.quiz-questions').on('click', '.submit-button', function(event) {
+    $('.quiz-questions').on('click', '.submit-button', function (event) {
         event.preventDefault();
         const valueHolder = $('.quiz-questions').find('.answers:checked').val();
+
         for (let i = 0; i < quiz.questions.length; i++) {
             if (valueHolder === quiz.questions[i].answer) {
-                alert(answers.correct);
-            }   else {
-                alert(answers.incorrect);
+                score += 1;
+                $('.quiz-selection').replaceWith(`<div class="box">
+                <h2>${answers.correct}</h2>
+                <img class="gif-style" src="https://media.giphy.com/media/10kxE34bJPaUO4/giphy.gif">
+                <button class="next-option">Next</button>
+                </div>`);
+
+            } else {
+                $('.quiz-selection').replaceWith(`<div class="box">
+                <h2>${answers.incorrect}</h2>
+                <img class="gif-style" src="https://media.giphy.com/media/3o6ZtfPqhS8PwCqp1e/giphy.gif">
+                <button class="next-option">Next</button>
+                </div>`);
+
             }
+            questionNumber += 1;
+
+            $('.next-option').on('click', function (event) {
+                $('.quiz-questions').html(getQuestions);
+            });
+
+            $('.submit-button').hide();
+            return valueHolder;
         }
-        //$('.submit-button').replaceWith('<button>Next</button>');
-        
-        
-        
+       
     });
-}
-
-
-
+    
+};

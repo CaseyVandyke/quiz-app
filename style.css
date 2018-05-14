@@ -15,6 +15,18 @@ body {
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 20px;
+    transition: all .2s ease-in-out; 
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+
+.gif-style {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    
 }
 
 .box {
@@ -30,7 +42,7 @@ button {
     font-size: 17px;
     width: 100px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .quiz-questions {

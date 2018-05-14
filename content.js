@@ -11,7 +11,7 @@ const quiz = {
     b: 'Jupiter',
     c: 'Uranus',
     d: 'Mars',
-    answer: 'Venus',
+    answer: 'a',
     img: '',
     explanation: ''
   },
@@ -19,19 +19,19 @@ const quiz = {
     question: 'Which planets dont have moons?',
     a: 'Earth and Jupiter',
     b: 'Mars and Neptune',
-    c: 'Mercury and Venus.',
+    c: 'Mercury and Venus',
     d: 'Uranus and Saturn',
-    answer: 'Mercury and Venus',
+    answer: 'c',
     img: '',
     explanation: ''
   },
   {  
-    question: 'How much larger the Sun is than Earth?',
+    question: 'How much larger is the Sun than the Earth?',
     a: '300,000 times larger',
     b: '400,000 times larger',
     c: '100,000 times larger',
     d: 'Twice and large',
-    answer: '300,000 times larger',
+    answer: 'a',
     img: '',
     explanation: ''
   },
@@ -41,7 +41,7 @@ const quiz = {
     b: '45 lbs',
     c: '76 lbs',
     d: '640 lbs',
-    answer: '76 lbs',
+    answer: 'c',
     img: '',
     explanation: ''
   },
@@ -51,7 +51,7 @@ const quiz = {
     b: '2061',
     c: '2405',
     d: '2130',
-    answer: '2061',
+    answer: 'b',
     img: '',
     explanation: ''
   }]
