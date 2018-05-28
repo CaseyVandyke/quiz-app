@@ -42,7 +42,7 @@ body {
 .box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     padding: 20px;
 }
@@ -79,17 +79,11 @@ button {
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-    font-size: 15px;
-}
-
-.quiz-questions .quiz-container {
-    border: 2px solid #3d3d3d;
-    margin-top: 20px;
-    border-radius: 2px;
+    font-size: 16px;
 }
 
 .quiz-questions .quiz-form {
-    margin: 30px;
+    margin-left: 20px;
 }
 
 .quiz-questions .question-style {
@@ -129,6 +123,10 @@ input[type="radio"] {
     margin: 0 10px;
 }
 
+label {
+    cursor: pointer;
+}
+
 
 /* Media Queries */
 
@@ -138,11 +136,10 @@ input[type="radio"] {
         margin: 0 auto;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .gif-style {
         width: 90%;
         height: 90%;
     }
 }
-
-
