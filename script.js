@@ -11,7 +11,7 @@ function getQuestions() {
 
         newHTML += `<label><input name="option" class="answers" data-answer="${questions[questionNumber].answers[i]}" type="radio"> ${questions[questionNumber].answers[i]} </label><br>`;
     }
-    return `<fieldset><legend>Space Quiz</legend><section class="question-page">
+    return `<fieldset><legend></legend><section class="question-page">
        <div class="quiz-container">
           <ul class="quiz-progress">
               <li>Questions: ${questionNumber+1}/10</li>
