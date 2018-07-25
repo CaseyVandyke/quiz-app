@@ -5,8 +5,8 @@
 
 body {
     font-family: Roboto, sans-serif;
-    background-color: #fff;
-    color: #3f3f3f;
+    background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=413d29f6051e59b9d2317d8d827c8279&auto=format&fit=crop&w=1370&q=80");
+    color: #fff;
 }
 
 .icon {
@@ -59,8 +59,7 @@ body {
 button {
     background-color: #54FF9F;
     color: #000;
-    box-shadow: 6px 6px 3px #7e7e7e;
-    border-radius: 3px;
+    border-radius: 5px;
     display: block;
     margin: 20px auto;
     padding: 15px 32px;
@@ -124,10 +123,11 @@ input[type="radio"] {
     margin: 0 10px;
 }
 
-label {
+label,
+.submit-button,
+.js-start {
     cursor: pointer;
 }
-
 
 /* Media Queries */
 
